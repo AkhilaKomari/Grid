@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            height: 200px;
+            gap:10px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .parent *{
+            background-color: paleturquoise;
+        }
+        .child1{
+            grid-column: 1/3;
+            grid-row: 1fr 1fr 2fr 1fr;
+        }
+        .child6 {
+            grid-column: 3/4;
+        }
+           .child7 {
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+        .child8 {
+            grid-column: 3/4;
+        }
+         .child11 {
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">cat</div>
+        <div class="child2">Dog</div>
+        <div class="child3">Elephant</div>
+        <div class="child4">Hen</div>
+        <div class="child5">Horse</div>
+        <div class="child6">Tiger</div>
+        <div class="child7">Lion</div>
+        <div class="child8">zebra</div>
+        <div class="child9">peacock</div>
+        <div class="child10">Deer</div>
+        <div class="child11">King</div>
+        <div class="child12">Kangaroo</div>
+    </div>
+    <a href="./index.html">Home</a>
+</body>
+</html>
